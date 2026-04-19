@@ -1,5 +1,5 @@
 /* =============================================
-   ADVERSE STUDIO — APP JAVASCRIPT
+   ARTVERSE — APP JAVASCRIPT
    ============================================= */
 
 // ── NAV SCROLL EFFECT ──────────────────────────
