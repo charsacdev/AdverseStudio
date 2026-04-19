@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adverse Studio — Digital Art House</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">
+        <span class="logo-mark">▲</span>
+        <span>ADVERSE</span>
+        <span class="logo-studio">STUDIO</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#how-we-work">How We Work</a></li>
+        <li><a href="#collaborations">Collaborations</a></li>
+        <li><a href="#contact" class="nav-cta">Acquire Art</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#about">About</a>
+      <a href="#how-we-work">How We Work</a>
+      <a href="#collaborations">Collaborations</a>
+      <a href="#contact">Acquire Art</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <canvas id="particleCanvas"></canvas>
+
+    <!-- Floating art cards — hero background -->
+    <div class="hero-cards-bg" aria-hidden="true">
+      <div class="hcard hcard1">
+        <div class="hcard-img" style="background:linear-gradient(135deg,#7c3aed,#ec4899)"></div>
+        <div class="hcard-label">GENESIS SERIES</div>
+      </div>
+      <div class="hcard hcard2">
+        <div class="hcard-img" style="background:linear-gradient(135deg,#0ea5e9,#6366f1)"></div>
+        <div class="hcard-label">VOID COLLECTION</div>
+      </div>
+      <div class="hcard hcard3">
+        <div class="hcard-img" style="background:linear-gradient(135deg,#f59e0b,#ef4444)"></div>
+        <div class="hcard-label">PULSE ARCHIVE</div>
+      </div>
+      <div class="hcard hcard4">
+        <div class="hcard-img" style="background:linear-gradient(135deg,#065f46,#0ea5e9)"></div>
+        <div class="hcard-label">EPOCH DROP</div>
+      </div>
+      <div class="hcard hcard5">
+        <div class="hcard-img" style="background:linear-gradient(135deg,#831843,#4f46e5)"></div>
+        <div class="hcard-label">DARK MATTER</div>
+      </div>
+    </div>
+
+    <div class="hero-content">
+      <p class="hero-pre reveal-up">Digital Art House · Est. 2024</p>
+      <h1 class="hero-title">
+        <span class="glitch" data-text="ADVERSE">ADVERSE</span>
+        <span class="hero-title-sub">STUDIO</span>
+      </h1>
+      <p class="hero-desc reveal-up">
+        We curate, produce, and sell digital art collections.<br />
+        Collaborating with visionary artists to bring rare works<br />
+        to collectors worldwide — on the blockchain.
+      </p>
+      <div class="hero-actions reveal-up">
+        <a href="#about" class="btn btn-primary">Discover the Studio</a>
+        <a href="#contact" class="btn btn-ghost">Acquire Art</a>
+      </div>
+      <div class="hero-stats reveal-up">
+        <div class="hstat"><span class="hstat-num" data-count="38">0</span><span>Collections</span></div>
+        <div class="hstat-divider"></div>
+        <div class="hstat"><span class="hstat-num" data-count="120">0</span><span>Artists Collaborated</span></div>
+        <div class="hstat-divider"></div>
+        <div class="hstat"><span class="hstat-num" data-count="840">0</span><span>Collectors</span></div>
+        <div class="hstat-divider"></div>
+        <div class="hstat"><span class="hstat-num" data-count="320">0</span><span>ETH Volume</span></div>
+      </div>
+    </div>
+
+    <div class="hero-scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee-wrap">
+    <div class="marquee-track">
+      <span>DIGITAL ART</span><span class="dot">✦</span>
+      <span>ART CURATION</span><span class="dot">✦</span>
+      <span>NFT COLLECTIONS</span><span class="dot">✦</span>
+      <span>ARTIST COLLABS</span><span class="dot">✦</span>
+      <span>BLOCKCHAIN</span><span class="dot">✦</span>
+      <span>RARE EDITIONS</span><span class="dot">✦</span>
+      <span>DIGITAL ART</span><span class="dot">✦</span>
+      <span>ART CURATION</span><span class="dot">✦</span>
+      <span>NFT COLLECTIONS</span><span class="dot">✦</span>
+      <span>ARTIST COLLABS</span><span class="dot">✦</span>
+      <span>BLOCKCHAIN</span><span class="dot">✦</span>
+      <span>RARE EDITIONS</span><span class="dot">✦</span>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-text">
+          <p class="section-label reveal-up">What We Do</p>
+          <h2 class="section-title reveal-up">A studio that<br /><em>collects the future.</em></h2>
+          <p class="about-body reveal-up">
+            Adverse Studio is a digital art house — not a marketplace, not a gallery. We work directly
+            with talented artists to develop cohesive digital collections, transforming raw creative
+            vision into curated, sellable art that lives permanently on the blockchain.
+          </p>
+          <p class="about-body reveal-up">
+            We handle the strategy, production, minting, and acquisition pipeline — so artists can
+            focus on creating, and collectors can trust every piece they acquire carries real artistic
+            and long-term investment value.
+          </p>
+          <div class="about-pills reveal-up">
+            <span class="pill">Curation</span>
+            <span class="pill">Production</span>
+            <span class="pill">NFT Minting</span>
+            <span class="pill">Acquisition</span>
+            <span class="pill">Resale</span>
+          </div>
+        </div>
+        <div class="about-visual">
+          <div class="about-orb orb1"></div>
+          <div class="about-orb orb2"></div>
+          <div class="about-card-stack">
+            <div class="acard acard1">
+              <div class="acard-img" style="background:linear-gradient(135deg,#7c3aed,#ec4899)"></div>
+              <div class="acard-label">GENESIS SERIES</div>
+            </div>
+            <div class="acard acard2">
+              <div class="acard-img" style="background:linear-gradient(135deg,#0ea5e9,#6366f1)"></div>
+              <div class="acard-label">VOID COLLECTION</div>
+            </div>
+            <div class="acard acard3">
+              <div class="acard-img" style="background:linear-gradient(135deg,#f59e0b,#ef4444)"></div>
+              <div class="acard-label">PULSE ARCHIVE</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VALUES / PILLARS -->
+  <section class="pillars section" id="pillars">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label reveal-up">Our Pillars</p>
+        <h2 class="section-title reveal-up">Built on <em>three principles.</em></h2>
+      </div>
+      <div class="pillars-grid">
+        <div class="pillar-card reveal-up" style="--d:0s">
+          <div class="pillar-icon">◈</div>
+          <h3>Artistic Integrity</h3>
+          <p>Every collection we produce starts with vision, not trends. We protect the artist's intent while making it commercially viable for serious collectors.</p>
+        </div>
+        <div class="pillar-card reveal-up" style="--d:0.12s">
+          <div class="pillar-icon">◉</div>
+          <h3>Collector-First Value</h3>
+          <p>We vet every collection for long-term value. Our buyers aren't flippers — they're patrons of digital culture investing in lasting works.</p>
+        </div>
+        <div class="pillar-card reveal-up" style="--d:0.24s">
+          <div class="pillar-icon">◎</div>
+          <h3>On-Chain Permanence</h3>
+          <p>Every work is minted on the blockchain. Provenance, ownership, and authenticity are verifiable forever — no intermediaries, no compromise.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW WE WORK -->
+  <section class="process section" id="how-we-work">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label reveal-up">The Process</p>
+        <h2 class="section-title reveal-up">From studio to <em>collector.</em></h2>
+        <p class="section-sub reveal-up">How Adverse Studio takes a collaboration from concept to acquisition.</p>
+      </div>
+      <div class="process-steps">
+
+        <div class="step reveal-up" style="--d:0s">
+          <div class="step-num">01</div>
+          <div class="step-icon">◈</div>
+          <h3>Artist Partnership</h3>
+          <p>We identify and partner with visionary artists — emerging and established — whose work aligns with our curatorial vision for digital collectibles.</p>
+          <div class="step-line"></div>
+        </div>
+
+        <div class="step reveal-up" style="--d:0.15s">
+          <div class="step-num">02</div>
+          <div class="step-icon">◉</div>
+          <h3>Collection Development</h3>
+          <p>We co-develop a coherent series with the artist — narrative, aesthetic direction, edition structure, and rarity tiers — ensuring collector desirability.</p>
+          <div class="step-line"></div>
+        </div>
+
+        <div class="step reveal-up" style="--d:0.3s">
+          <div class="step-num">03</div>
+          <div class="step-icon">◍</div>
+          <h3>Mint & Authenticate</h3>
+          <p>The collection is minted on-chain with full provenance metadata. Every edition is traceable, authenticated, and permanently recorded.</p>
+          <div class="step-line"></div>
+        </div>
+
+        <div class="step reveal-up" style="--d:0.45s">
+          <div class="step-num">04</div>
+          <div class="step-icon">◎</div>
+          <h3>Acquire & Own</h3>
+          <p>Collectors access the collection directly through Adverse Studio. Your piece transfers to your wallet — verifiable ownership, forever.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- COLLABORATIONS -->
+  <section class="collabs section" id="collaborations">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label reveal-up">Our Work</p>
+        <h2 class="section-title reveal-up">Recent <em>collections.</em></h2>
+        <p class="section-sub reveal-up">A selection of digital collections produced and sold by Adverse Studio.</p>
+      </div>
+      <div class="collabs-grid">
+
+        <div class="collab-card reveal-up tilt-card" style="--d:0s">
+          <div class="collab-img" style="background:linear-gradient(135deg,#7c3aed,#ec4899,#f59e0b)">
+            <div class="collab-noise"></div>
+            <div class="collab-badge">Sold Out</div>
+          </div>
+          <div class="collab-body">
+            <h3>Genesis Series</h3>
+            <p class="collab-sub">Abstract digital paintings exploring the origin of form and light.</p>
+            <div class="collab-meta">
+              <span class="collab-tag">24 Editions</span>
+              <span class="collab-tag">Ethereum</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="collab-card collab-featured reveal-up tilt-card" style="--d:0.1s">
+          <div class="collab-img" style="background:linear-gradient(135deg,#0ea5e9,#6366f1,#8b5cf6)">
+            <div class="collab-noise"></div>
+            <div class="collab-badge">Active</div>
+          </div>
+          <div class="collab-body">
+            <h3>Void Collection</h3>
+            <p class="collab-sub">A deep-space generative series examining silence, distance, and scale.</p>
+            <div class="collab-meta">
+              <span class="collab-tag">12 Editions</span>
+              <span class="collab-tag">1-of-1s</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="collab-card reveal-up tilt-card" style="--d:0.2s">
+          <div class="collab-img" style="background:linear-gradient(135deg,#f59e0b,#ef4444,#dc2626)">
+            <div class="collab-noise"></div>
+            <div class="collab-badge">Sold Out</div>
+          </div>
+          <div class="collab-body">
+            <h3>Pulse Archive</h3>
+            <p class="collab-sub">A neon-soaked ode to urban decay and the energy of the modern city.</p>
+            <div class="collab-meta">
+              <span class="collab-tag">18 Editions</span>
+              <span class="collab-tag">Polygon</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="collab-card reveal-up tilt-card" style="--d:0.3s">
+          <div class="collab-img" style="background:linear-gradient(135deg,#065f46,#0ea5e9,#3b82f6)">
+            <div class="collab-noise"></div>
+            <div class="collab-badge">Upcoming</div>
+          </div>
+          <div class="collab-body">
+            <h3>Silent Epoch</h3>
+            <p class="collab-sub">Photorealistic landscapes of vanishing ecosystems, frozen on-chain forever.</p>
+            <div class="collab-meta">
+              <span class="collab-tag">10 Editions</span>
+              <span class="collab-tag">Ethereum</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="collab-card reveal-up tilt-card" style="--d:0.4s">
+          <div class="collab-img" style="background:linear-gradient(135deg,#6d28d9,#a855f7,#f59e0b)">
+            <div class="collab-noise"></div>
+            <div class="collab-badge">Sold Out</div>
+          </div>
+          <div class="collab-body">
+            <h3>Liminal State</h3>
+            <p class="collab-sub">AI-assisted surrealist works exploring the threshold between sleep and waking.</p>
+            <div class="collab-meta">
+              <span class="collab-tag">30 Editions</span>
+              <span class="collab-tag">Foundation</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="collab-card reveal-up tilt-card" style="--d:0.5s">
+          <div class="collab-img" style="background:linear-gradient(135deg,#831843,#4f46e5,#0ea5e9)">
+            <div class="collab-noise"></div>
+            <div class="collab-badge">Active</div>
+          </div>
+          <div class="collab-body">
+            <h3>Dark Matter</h3>
+            <p class="collab-sub">A minimalist exploration of cosmic architecture and invisible forces.</p>
+            <div class="collab-meta">
+              <span class="collab-tag">8 Editions</span>
+              <span class="collab-tag">SuperRare</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials section" id="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label reveal-up">Voices</p>
+        <h2 class="section-title reveal-up">What collectors <em>say.</em></h2>
+      </div>
+      <div class="testi-grid">
+        <div class="testi-card reveal-up" style="--d:0s">
+          <div class="testi-stars">★★★★★</div>
+          <p>"Adverse Studio doesn't just sell NFTs — they build collections with real narrative depth. Every acquisition feels considered."</p>
+          <div class="testi-author">
+            <div class="testi-avatar" style="background:linear-gradient(135deg,#7c3aed,#ec4899)">CW</div>
+            <div>
+              <strong>Caleb Winters</strong>
+              <span>Digital Art Collector</span>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card reveal-up" style="--d:0.15s">
+          <div class="testi-stars">★★★★★</div>
+          <p>"I've worked with several studios. None come close to the curation standard Adverse holds. The artists they collaborate with are exceptional."</p>
+          <div class="testi-author">
+            <div class="testi-avatar" style="background:linear-gradient(135deg,#0ea5e9,#6366f1)">SM</div>
+            <div>
+              <strong>Sasha Mercer</strong>
+              <span>Investment Collector · Dubai</span>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card reveal-up" style="--d:0.3s">
+          <div class="testi-stars">★★★★★</div>
+          <p>"As an artist, partnering with Adverse was transformative. They gave my series the structure and reach I couldn't have built alone."</p>
+          <div class="testi-author">
+            <div class="testi-avatar" style="background:linear-gradient(135deg,#f59e0b,#ef4444)">TR</div>
+            <div>
+              <strong>Tye Rollins</strong>
+              <span>Collaborating Artist</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BAND -->
+  <section class="cta-band section" id="contact">
+    <div class="cta-band-bg"></div>
+    <div class="container">
+      <div class="cta-band-inner reveal-up">
+        <p class="section-label">Get In Touch</p>
+        <h2>Collect. Collaborate.<br /><em>Create legacy.</em></h2>
+        <p>Whether you're a collector looking to acquire rare digital art, or an artist ready to build something lasting — Adverse Studio is where it begins.</p>
+        <div class="cta-band-actions">
+          <a href="mailto:contact@adversestudio.io" class="btn btn-primary btn-lg">Acquire Art</a>
+          <a href="mailto:collab@adversestudio.io" class="btn btn-ghost btn-lg">Artist Collaboration</a>
+        </div>
+        <div class="cta-social">
+          <a href="#" class="social-link">Twitter / X</a>
+          <a href="#" class="social-link">Discord</a>
+          <a href="#" class="social-link">OpenSea</a>
+          <a href="#" class="social-link">Instagram</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#" class="nav-logo">
+            <span class="logo-mark">▲</span>
+            <span>ADVERSE</span>
+            <span class="logo-studio">STUDIO</span>
+          </a>
+          <p>A digital art house that curates, produces, and sells rare digital collections on the blockchain.</p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-col">
+            <h4>Studio</h4>
+            <a href="#about">About</a>
+            <a href="#how-we-work">How We Work</a>
+            <a href="#collaborations">Collections</a>
+          </div>
+          <div class="footer-col">
+            <h4>Platforms</h4>
+            <a href="#">OpenSea</a>
+            <a href="#">Foundation</a>
+            <a href="#">SuperRare</a>
+            <a href="#">Blur</a>
+          </div>
+          <div class="footer-col">
+            <h4>Connect</h4>
+            <a href="#">Discord</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+            <a href="#">Newsletter</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2024 Adverse Studio. All rights reserved.</p>
+        <p>Built on the blockchain. Owned by the people.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
