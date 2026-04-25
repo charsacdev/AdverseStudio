@@ -1,5 +1,5 @@
 /* =============================================
-   ARTVERSE — APP JAVASCRIPT
+   CHAIN GALLERY — APP JAVASCRIPT
    ============================================= */
 
 // ── NAV SCROLL EFFECT ──────────────────────────
